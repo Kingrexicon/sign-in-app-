@@ -16,12 +16,22 @@ body{
   background-color: rgba(35, 35, 35, 0.33);
 
   box-shadow: 0 0 5px 2px purple ;
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+@media all and (max-width:450px) {
+  .div{
+    width: 100%;}
 
+section{
+  margin-top: 50px;
+width: 100%;
+}
+
+    
+}
 .a{
  color: rgb(235, 89, 235);
  font-weight: 600;
