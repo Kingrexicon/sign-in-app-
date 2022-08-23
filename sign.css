@@ -1,0 +1,92 @@
+*{
+  /* border: 1px solid purple ; */
+}
+body{
+  /* background-color: rgb(182, 96, 235);    */
+  background-image: url(./jr-korpa-9XngoIpxcEo-unsplash.jpg);
+  background-size: cover;
+  padding: 30px;
+  min-height: 780px;
+  background-repeat: no-repeat;
+  color: rgba(240, 248, 255, 0.658);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div{
+  background-color: rgba(35, 35, 35, 0.33);
+
+  box-shadow: 0 0 5px 2px purple ;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.a{
+ color: rgb(235, 89, 235);
+ font-weight: 600;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+}
+table{
+  margin: auto;
+  width: 50%;
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+font-size: smaller;
+text-align: center;
+  /* width: 10%; */
+}
+section{
+  margin-top: 50px;
+/* background-color: white;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  background-color: rgb(194, 42, 240);
+  /* border: 1px black solid; */
+  /* width: ; */
+  font-family: cursive;
+  margin: auto;
+
+  height: 50px;
+ border-radius: 15px;
+box-shadow: 0px 2px 0.5px 1px rgb(13, 7, 85);
+}
+button:hover{
+  background-color: rgb(16, 16, 16);
+  font-family: cursive;
+  color: whitesmoke;
+  height: 50px;
+ border-radius: 15px;
+box-shadow: 0px 2px 0.5px 1px rgb(156, 7, 220);
+}
+
+input{
+  
+   height: 150px;
+   /* background-color:black; */
+   color: rgba(19, 19, 19, 0.631);
+   border-radius: 5px;
+   margin-bottom: 10px;
+   height: 50px;
+   margin-top: 10px;
+   border: transparent;
+}
+input:hover{
+  border: 1px solid rgb(123, 70, 184);
+}
+label{
+  font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: aliceblue;
+
+}
+input::placeholder{
+color: rgba(14, 14, 14, 0.454);}
