@@ -27,39 +27,35 @@ function confirmLogin() {
   var eCheck = emailCheck.value
   var pCheck = passwordCheck.value
   var allStudents = JSON.parse(localStorage.getItem("allStudentsDetail"))
-  var found = false
+
   for (let index = 0; index < allStudents.length; index++) {
     if (allStudents[index].eMail == eCheck && allStudents[index].pWord == pCheck) {
-      found = true
-
       passwordCheck.value = ""
+      emailCheck.value =" "
       alert("login successful")
+
+      window.location.href = "new2.html"
+    }
+ 
+    else {
+      alert("invalid email or password")
     }
   }
-
-  if (found = true) {
-    window.location.href = "new2.html"
-  }
-
-  else {
-    alert("invalid email or password")
-  }
-
 }
 
 function searchStudents() {
-  var number = `KRN${Math.round(Math.random() * 10000)}`
+  var number = `KRN${Math.round(Math.random() * 100000)}`
   var date = new Date()
   date.getFullYear
   var allStudents = JSON.parse(localStorage.getItem("allStudentsDetail"))
   var checkStudents = findStudent.value
   if (checkStudents = allStudents[findStudent.value]) {
-    first.innerHTML = allStudents[findStudent.value].fName,
-      middle.innerHTML = allStudents[findStudent.value].mName,
-      last.innerHTML = allStudents[findStudent.value].lName,
-      email.innerHTML = allStudents[findStudent.value].eMail,
-      pass.innerHTML = allStudents[findStudent.value].pWord,
-      numb.innerHTML = number,
+    first.innerHTML = " <em> Firstname: </em>"  + allStudents[findStudent.value].fName,
+      middle.innerHTML = "<em> Secondname:</em>"  + allStudents[findStudent.value].mName,
+      last.innerHTML = "<em> Middlename: </em>"  + allStudents[findStudent.value].lName,
+      email.innerHTML = "<em> Firstname: </em>"  + allStudents[findStudent.value].eMail,
+      // pass.innerHTML = "<em> Your Passowrd: </em>"  + allStudents[findStudent.value].pWord,
+      numb.innerHTML ="<em> Your ID number: </em>"  +  number,
       date.innerHTML = date
 
 
