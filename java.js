@@ -68,7 +68,7 @@ function searchStudents() {
 }
 
 
-var allStudents = JSON.parse(localStorage.getItem("allStudentsDetail")) 
+// var allStudents = JSON.parse(localStorage.getItem("allStudentsDetail")) 
 for (let index = 0; index < allStudents.length; index++) {
   myTable.innerHTML += `<tr>
   <td>${index+1 }</td>
@@ -76,7 +76,8 @@ for (let index = 0; index < allStudents.length; index++) {
   <td>${allStudents[index].mName }</td>
   <td>${ allStudents[index].lName}</td>
   <td>${ allStudents[index].eMail}</td>
-  <td><button>delete</button>
+  <td>${ allStudents[index].pWord}</td>  
+  <td><button onclick("")>delete</button>
       <button>edit</button>
   </td>
   </tr>
