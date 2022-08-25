@@ -27,21 +27,38 @@ function confirmLogin() {
   var eCheck = emailCheck.value
   var pCheck = passwordCheck.value
   var allStudents = JSON.parse(localStorage.getItem("allStudentsDetail"))
+  var verifyUser = false
 
   for (let index = 0; index < allStudents.length; index++) {
     if (allStudents[index].eMail == eCheck && allStudents[index].pWord == pCheck) {
       passwordCheck.value = ""
       emailCheck.value =" "
-      alert("login successful")
-
-      window.location.href = "new2.html"
-    }
- 
-    else {
-      alert("invalid email or password")
+      verifyUser = true
+      break;
     }
   }
-}
+  if(verifyUser==true){
+    alert("user found")
+    window.location.href = "new2.html"
+  }else{
+    alert("user not found")
+  }
+}                             
+
+// for (let index = 0; index < allStudents.length; index++) {
+//   if (allStudents[index].eMail == eCheck && allStudents[index].pWord == pCheck) {
+//     passwordCheck.value = ""
+//     emailCheck.value =" "
+//     alert("login successful")
+
+//     window.location.href = "new2.html"
+//   }
+
+//   else {
+//     alert("invalid email or password")
+//   }
+// }
+// }
 
 function searchStudents() {
   var number = `KRN${Math.round(Math.random() * 100000)}`
@@ -64,7 +81,7 @@ function searchStudents() {
 }
 
 
-// var allStudents = JSON.parse(localStorage.getItem("allStudentsDetail")) 
+var allStudents = JSON.parse(localStorage.getItem("allStudentsDetail")) 
 for (let index = 0; index < allStudents.length; index++) {
   myTable.innerHTML += `<tr>
   <td>${index+1 }</td>
