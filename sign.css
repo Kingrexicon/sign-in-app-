@@ -13,7 +13,7 @@ body{
 }
 
 .div{
-  background-color: rgba(35, 35, 35, 0.33);
+  background-color: rgba(243, 29, 29, 0.74);
 
   box-shadow: 0 0 5px 2px purple ;
   width: 80%;
@@ -23,11 +23,7 @@ body{
 }
 @media all and (max-width:450px) {
   .div{
-    width: 100%;}
-
-section{
-  margin-top: 50px;
-width: 100%;
+    width:
 }
 
     
